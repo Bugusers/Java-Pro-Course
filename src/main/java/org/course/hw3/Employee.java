@@ -1,6 +1,8 @@
 package org.course.hw3;
 
 
+import org.course.hw3.Car.Car;
+
 /*
  * First Task
  */
@@ -11,13 +13,17 @@ public class Employee {
     private String position;
     private int age;
 
-    public Employee(String name, String surname, String email, String phone, String position, int age) {
+    private Car emploeesCar;
+
+    public Employee(String name, String surname, String email, String phone, String position, int age, Car emploeesCar) {
         this.fullname = name + " " + surname;
         this.email = email;
         this.phone = phone;
         this.position = position;
         this.age = age;
+        this.emploeesCar = emploeesCar;
     }
+
 
     public String getFullname() {
         return fullname;
@@ -57,5 +63,13 @@ public class Employee {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Car getEmploeesCar() {
+        return emploeesCar;
+    }
+
+    public void setEmploeesCar(Car emploeesCar) {
+        this.emploeesCar = emploeesCar;
     }
 }
