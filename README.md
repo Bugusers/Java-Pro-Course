@@ -56,3 +56,43 @@ In this part of the course, we explore polymorphism in Java. The program simulat
 - **printStringMultipleTimes(String text, int count):** A function that prints a given string a specified number of times.
 
 - **isLeapYear(int year):** A function that checks if a year is a leap year based on specified conditions.
+
+
+### Homework №7 String and char
+
+This homework assignment focuses on string manipulation tasks in Java. You will be implementing methods to find symbol occurrences, word positions, reverse strings, check for palindromes, and play a word guessing game.
+
+- **Task 1**: Find Symbol Occurrences: Implement a method findSymbolOccurance(String source, char symbol) that counts the number of times a given symbol (symbol) appears in a given string (source).
+
+- **Task 2**: Find Word Position: Implement a method findWordPosition(String source, String target) that finds the index of the first occurrence of a given target string (target) in a given source string (source). If the target string is not found, return -1.
+
+- **Task 3**: Reverse String: Implement a method stringReverse(String source) that reverses the characters in a given string (source). Return the reversed string.
+
+- **Task 4**: Check for Palindrome: Implement a method isPalindrome(String text) that checks if a given string (text) is a palindrome. A palindrome is a string that reads the same backward as forward, ignoring non-alphanumeric characters.
+
+- **Task 5**: Word Guessing Game: Implement a method wordGame() that plays a word guessing game. The game should randomly select a word from a list of words and allow the user to guess the word. The game should provide feedback and hints to the user.
+
+
+### Homework №8 Exceptions
+
+**The ArrayValueCalculator class**
+
+This class provides methods for calculating the sum of integers in a 4x4 matrix and validating the input data. It uses two exceptions to handle invalid input:
+
+    ArraySizeException: Thrown when the matrix does not have the correct size (4x4).
+    ArrayDataException: Thrown when any cell in the matrix contains non-integer data.
+
+The doCalc method calculates the sum of the integers in the matrix and throws an exception if the input data is invalid. It first checks the size of the matrix using Arrays.stream(matrix).anyMatch(row -> row.length != 4). If the matrix is not 4x4, it throws an ArraySizeException.
+
+If the matrix has the correct size, it converts each element of the matrix to an integer using Integer.parseInt(matrix[i][j]) and stores the result in a new 2D array. It then calculates the sum of all the values in the new array using Arrays.stream(result) .mapToInt(row -> Arrays.stream(row).sum()) .sum() and returns the sum.
+
+**The ArrayDataException and ArraySizeException classes**
+
+These classes are used to encapsulate exceptions that arise from invalid input data. ArrayDataException is a subclass of NumberFormatException, which is thrown when an attempt is made to convert a string to a number that cannot be parsed. ArraySizeException is a subclass of ArithmeticException, which is thrown when an arithmetic operation results in an error.
+
+**The Main class**
+
+This class provides an example of how to use the ArrayValueCalculator class. It creates three arrays: arr1, arr2, and arr3. The first array is a valid 4x4 matrix, the second array has a non-integer value, and the third array has different row lengths.
+
+The Main class calls the doCalc method for each array and catches any exceptions that are thrown. If an exception is thrown, it prints an error message to the console
+
