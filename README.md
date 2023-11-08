@@ -96,3 +96,14 @@ This class provides an example of how to use the ArrayValueCalculator class. It 
 
 The Main class calls the doCalc method for each array and catches any exceptions that are thrown. If an exception is thrown, it prints an error message to the console
 
+### Homework 10 
+The ValueCalculator class performs calculations on an array of values of type double using two threads. The class demonstrates the use of thread synchronization to ensure that the two threads work on separate parts of the array without interfering with each other.
+
+Here is a brief description of the class:
+
+- The class constructor takes an arraySize parameter and initializes the array arr, the variables arrSize and half. If arraySize is less than 1,000,000, arraySize is set to 1,000,000 to ensure the minimum array size.
+- The getArraySize() and getHalfArraySize() methods provide read-only access to the arrSize and half variables, respectively.
+- The calculate() method performs basic calculations using two threads. It first creates two empty arrays, a1 and a2, half the size of the original array. It then copies the first half of the arr array to a1 and the second half to a2 using System.arraycopy(). It then creates two threads, thread1 and thread2, each with a lambda expression that calls the calculateValue() method on the appropriate array (a1 or a2). It then starts both threads with thread1.start() and thread2.start(). Then it waits for both threads to finish using thread1.join() and thread2.join(). Finally, it copies the updated values from a1 and a2 back to the original array arr using System.arraycopy(). It measures the execution time using System.currentTimeMillis() and outputs the time spent.
+- The calculateValue() method performs the actual calculation on the provided array. It tries the elements of the array and updates each value using the provided formula.
+
+The class effectively utilizes multithreading to improve computation performance, especially for large arrays.   
