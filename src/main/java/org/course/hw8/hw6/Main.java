@@ -1,4 +1,4 @@
-package org.course.hw6;
+package org.course.hw8.hw6;
 
 
 public class Main {
