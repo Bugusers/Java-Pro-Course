@@ -96,7 +96,7 @@ This class provides an example of how to use the ArrayValueCalculator class. It 
 
 The Main class calls the doCalc method for each array and catches any exceptions that are thrown. If an exception is thrown, it prints an error message to the console
 
-### Homework 10 
+### Homework 10 Threads 1
 The ValueCalculator class performs calculations on an array of values of type double using two threads. The class demonstrates the use of thread synchronization to ensure that the two threads work on separate parts of the array without interfering with each other.
 
 Here is a brief description of the class:
@@ -107,3 +107,33 @@ Here is a brief description of the class:
 - The calculateValue() method performs the actual calculation on the provided array. It tries the elements of the array and updates each value using the provided formula.
 
 The class effectively utilizes multithreading to improve computation performance, especially for large arrays.   
+
+### Homework 11 Concurrency
+
+Demonstrates thread-safe list implementations and a simulation of a PetrolStation using synchronization mechanisms.
+
+- ThreadSafeList Interface:
+
+        Defines a thread-safe list with methods to add, remove, and get elements.
+
+- ThreadSafeList Implementations:
+
+        ThreadSafeListWithLock: Implements the ThreadSafeList interface using a ReentrantLock for thread safety.
+        
+        ThreadSafeListWithSemaphore: Implements the ThreadSafeList interface using a Semaphore for thread safety.
+        
+        ThreadSafeListWithSynchronized: Implements the ThreadSafeList interface using synchronized methods for thread safety.
+
+- PetrolStation Class (PetrolStation.java):
+
+        Simulates a Petrol Station with a specified initial amount of fuel.
+
+        Uses a Semaphore to control concurrent access to the refueling process.
+
+        The doRefuel method simulates a vehicle refueling by acquiring a permit, sleeping for a random duration, decrementing the fuel amount, and releasing the permit.
+
+- Main Class (Main.java):
+
+    Contains the main method to run the program. 
+    Calls methods to demonstrate each type of thread-safe list implementation (treadWithLock, treadWithSemaphore, treadWithSynchronized).
+    Also demonstrates a PetrolStation example where vehicles are refueling concurrently with a limited number of permits using a Semaphore.
