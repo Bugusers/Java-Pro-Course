@@ -3,11 +3,11 @@ package org.course.hw12.phonebook;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Note {
+public class Record {
     private String name;
     private List<String> phoneNumbers;
 
-    public Note(String name, String phoneNumber) {
+    public Record(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumbers = new ArrayList<>();
         this.phoneNumbers.add(phoneNumber);

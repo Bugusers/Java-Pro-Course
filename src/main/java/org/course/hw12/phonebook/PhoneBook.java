@@ -2,45 +2,44 @@ package org.course.hw12.phonebook;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class PhoneBook {
-    private List<Note> notes;
+    private List<Record> records;
 
     public PhoneBook() {
-        this.notes = new ArrayList<>();
+        this.records = new ArrayList<>();
     }
 
-    public void add(Note note) {
-        if (!isNoteExist(note.getName(), note.getPhoneNumbers())) {
-            notes.add(note);
+    public void add(Record record) {
+        if (!isNoteExist(record.getName(), record.getPhoneNumbers())) {
+            records.add(record);
         }
 
 
     }
 
     private boolean isNoteExist(String name, List<String> phoneNumber) {
-        for (Note note : notes) {
-            if (note.getName().equals(name) && note.getPhoneNumbers().equals(phoneNumber)) {
+        for (Record record : records) {
+            if (record.getName().equals(name) && record.getPhoneNumbers().equals(phoneNumber)) {
                 return true;
             }
         }
         return false;
     }
 
-    public Note find(String name) {
-        return notes.stream()
+    public Record find(String name) {
+        return records.stream()
                 .filter(note -> note.getName().equals(name))
                 .findFirst()
                 .orElse(null);
     }
 
-    public List<Note> findAll(String name) {
-        List<Note> foundNote = notes.stream()
+    public List<Record> findAll(String name) {
+        List<Record> foundRecords = records.stream()
                 .filter(note -> note.getName().equals(name))
                 .collect(Collectors.toList());
 
-        return  foundNote.isEmpty() ? null : foundNote;
+        return  foundRecords.isEmpty() ? null : foundRecords;
     }
 }

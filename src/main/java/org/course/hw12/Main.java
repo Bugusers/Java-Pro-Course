@@ -1,7 +1,7 @@
 package org.course.hw12;
 
 
-import org.course.hw12.phonebook.Note;
+import org.course.hw12.phonebook.Record;
 import org.course.hw12.phonebook.PhoneBook;
 
 import java.util.*;
@@ -40,29 +40,29 @@ public class Main {
         PhoneBook phoneBook = new PhoneBook();
 
 
-        Note ivanNote = new Note("Іван", "123-456-789");
+        Record ivanNote = new Record("Іван", "123-456-789");
         ivanNote.addPhoneNumber("987-654-321");
         phoneBook.add(ivanNote);
 
-        phoneBook.add(new Note("Марія", "111-222-333"));
-        phoneBook.add(new Note("Іван", "111-222-333"));
+        phoneBook.add(new Record("Марія", "111-222-333"));
+        phoneBook.add(new Record("Іван", "111-222-333"));
 
         String searchName = "Іван";
 
 
-        Note foundNote = phoneBook.find(searchName);
-        if (foundNote != null) {
-            System.out.println("Знайдено: " + foundNote.getName() + " - " + foundNote.getPhoneNumbers());
+        Record foundRecord = phoneBook.find(searchName);
+        if (foundRecord != null) {
+            System.out.println("Знайдено: " + foundRecord.getName() + " - " + foundRecord.getPhoneNumbers());
         } else {
             System.out.println("Запис не знайдено для ім'я " + searchName);
         }
 
 
 
-        List<Note> foundNotes = phoneBook.findAll(searchName);
-        if (!foundNotes.isEmpty()) {
+        List<Record> foundRecords = phoneBook.findAll(searchName);
+        if (!foundRecords.isEmpty()) {
             System.out.println("Знайдено записів для ім'я " + searchName + ":");
-            for (Note note : foundNotes) {
+            for (Record note : foundRecords) {
                 System.out.println(note.getName() + " - " + note.getPhoneNumbers());
             }
         } else {

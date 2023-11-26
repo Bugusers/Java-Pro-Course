@@ -137,3 +137,24 @@ Demonstrates thread-safe list implementations and a simulation of a PetrolStatio
     Contains the main method to run the program. 
     Calls methods to demonstrate each type of thread-safe list implementation (treadWithLock, treadWithSemaphore, treadWithSynchronized).
     Also demonstrates a PetrolStation example where vehicles are refueling concurrently with a limited number of permits using a Semaphore.
+
+
+### Homework 12 Collections: lists
+
+- The countOccurance method that takes a string list as a parameter and an arbitrary string. Counts the number of times the passed string occurs as the second argument.
+
+- The toList method that takes an integer array of arbitrary length as an input. Converts the array to a list of the corresponding data type and returns.
+
+- The findUnique method, which takes as input a numeric list consisting of arbitrary values that can be repeated in an unlimited number. Returns a new numeric list containing only unique numbers.
+
+- The calcOccurance method, which takes a string list as a parameter. The list is filled with any 10-20 words that can be repeated in an unlimited number. Calculates how many times each word occurs.
+
+- A findOccurance method that takes a string list as a parameter. The list is filled with any 10-20 words that can be repeated in an unlimited number. Calculates how many times each word occurs. The result is returned as a list of structures that describe the repetition of each individual word.
+
+Phonebook package
+
+- The Record class stores the Name and Phone numbers.
+
+- The Phonebook class stores many records of the Record data type. The Phonebook class implements the add method. The method adds an entry to the Phonebook. Also the find() method is implemented. The method searches for a specific record by name. If the entry is found (the first one found), then it is returned, otherwise null is returned
+
+- In the Phonebook class, the findAll() method is implemented. The method searches for records by name. If records are found, then they must be returned, otherwise null is returned. 
