@@ -160,7 +160,7 @@ Phonebook package
 - In the Phonebook class, the findAll() method is implemented. The method searches for records by name. If records are found, then they must be returned, otherwise null is returned.
 
 
-### Homework 13 Collections: lists
+### Homework 13 Dictionaries
 The FileData class represents a specific file and consists of: file name, size in bytes, file path.
 
 The FileNavigator class is designed to store a list of files that are located on a specific path.
