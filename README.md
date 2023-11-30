@@ -157,4 +157,19 @@ Phonebook package
 
 - The Phonebook class stores many records of the Record data type. The Phonebook class implements the add method. The method adds an entry to the Phonebook. Also the find() method is implemented. The method searches for a specific record by name. If the entry is found (the first one found), then it is returned, otherwise null is returned
 
-- In the Phonebook class, the findAll() method is implemented. The method searches for records by name. If records are found, then they must be returned, otherwise null is returned. 
+- In the Phonebook class, the findAll() method is implemented. The method searches for records by name. If records are found, then they must be returned, otherwise null is returned.
+
+
+### Homework 13 Collections: lists
+The FileData class represents a specific file and consists of: file name, size in bytes, file path.
+
+The FileNavigator class is designed to store a list of files that are located on a specific path.
+- The add method adds a file to the specified path. If the path already exists, the new file must be added to the list already associated with the corresponding path.
+
+- The find method returns a list of files associated with the path passed as a parameter.
+
+- The filterBySize method returns a list of files whose size (in bytes) does not exceed the value passed as a parameter.
+
+- The remove method removes the path and associated files based on the path value passed as a parameter.
+
+- Method sortBySize The method sorts all available files by size (in ascending order), then returns a list of sorted files.
