@@ -23,19 +23,17 @@ public class Main {
             System.out.println("Files in path /path1: " + filesInPath1);
 
 
-            fileNavigator.remove("/path2");
+            //fileNavigator.remove("/path2");
 
 
             List<FileData> sortedFiles = fileNavigator.sortBySize();
             System.out.println("Sorted files by size: " + sortedFiles);
 
 
-            List<FileData> filteredFiles = fileNavigator.filterBySize("/path1", 130);
-            System.out.println("Filtered files in path /path1 by size <= 130: " + filteredFiles);
+            List<FileData> filteredFiles = fileNavigator.filterBySize(130);
+            System.out.println("Filtered files by size <= 130: " + filteredFiles);
 
-        } catch (FileAlreadyExist e) {
-            System.err.println("Error: " + e.getMessage());
-        } catch (InconsistentPathException e) {
+        } catch (FileAlreadyExist | InconsistentPathException e) {
             System.err.println("Error: " + e.getMessage());
         }
     }

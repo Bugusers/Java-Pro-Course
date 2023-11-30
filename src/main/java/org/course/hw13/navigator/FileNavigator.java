@@ -41,9 +41,10 @@ public class FileNavigator {
         return allFiles;
     }
 
-    public List<FileData> filterBySize(String path, long maxSize) {
-        return filesMap.getOrDefault(path, Collections.emptyList())
+    public List<FileData> filterBySize(long maxSize) {
+        return filesMap.values()
                 .stream()
+                .flatMap(List::stream)
                 .filter(fileData -> fileData.getSize() <= maxSize)
                 .toList();
     }
