@@ -187,6 +187,7 @@ The CoffeeOrderBoard class is a digital representation of the order queue in a c
 
 - The draw method displays information about the current state of the queue in the console in the order of the order closest to the issuance of the order.
 
+
 ### Homework 15 Algorithms
 class SortedUtils contains static methods for sorting an array using two algorithms: QuickSort and ShakerSort.
 - The "Quick sort" algorithm: Based on splitting the data structure in smaller partitions and sort them recursively until the data structure is sorted.
