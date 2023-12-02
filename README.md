@@ -192,3 +192,17 @@ The CoffeeOrderBoard class is a digital representation of the order queue in a c
 class SortedUtils contains static methods for sorting an array using two algorithms: QuickSort and ShakerSort.
 - The "Quick sort" algorithm: Based on splitting the data structure in smaller partitions and sort them recursively until the data structure is sorted.
 - The algorithm "Shuffle sorting (Shaker sorting)": Shaker Sort alternates two Bubble Sorts, the first one that sorts the structure starting from the largest element ordering the elements down to the smallest, and the second one, that starts from the smallest element and sorts the elements up to the largest. 
+
+
+### Homework 16 Generics
+The toList method takes an array as input and converts them to a list. The collection stores the same data type as the input array.
+
+The base type is Fruit.
+Types Apple, Orange that inherit from the Fruit type. Weight: apple - 1.0F, orange - 1.5F.
+
+The Box type. You can put fruits in a box. However, you cannot put fruits of the same type in one box.
+- The method of adding a fruit (1 unit) to the box.
+- A method for adding fruits (plural) to a box.
+- The getWeight() method. The method calculates the weight of the box based on the weight of one fruit and its quantity.
+- The compare method compares the current box with the one passed as a parameter. Returns true if their weights are equal, otherwise false
+- The merge method performs a transfer from the passed box as a parameter to the current one.  
