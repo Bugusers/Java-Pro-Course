@@ -173,3 +173,21 @@ The FileNavigator class is designed to store a list of files that are located on
 - The remove method removes the path and associated files based on the path value passed as a parameter.
 
 - Method sortBySize The method sorts all available files by size (in ascending order), then returns a list of sorted files.
+
+
+### Homework 14 Dictionaries and plurals
+The Order class is a digital representation of an order. This class contains the order number and the name of the person who ordered it.
+
+The CoffeeOrderBoard class is a digital representation of the order queue in a coffee shop. This class contains a list of orders.
+- The add method adds a new order and gives the order a number (natural order).
+
+- The deliver method delivers the next order in the queue. Delivery is accompanied by the removal of the order from the list.
+
+- The deliver method issues an order with a specific number. The delivery is accompanied by the removal of the order from the list. This method handles the situation when an order that was received later is ready earlier.
+
+- The draw method displays information about the current state of the queue in the console in the order of the order closest to the issuance of the order.
+
+### Homework 15 Algorithms
+class SortedUtils contains static methods for sorting an array using two algorithms: QuickSort and ShakerSort.
+- The "Quick sort" algorithm: Based on splitting the data structure in smaller partitions and sort them recursively until the data structure is sorted.
+- The algorithm "Shuffle sorting (Shaker sorting)": Shaker Sort alternates two Bubble Sorts, the first one that sorts the structure starting from the largest element ordering the elements down to the smallest, and the second one, that starts from the smallest element and sorts the elements up to the largest. 
