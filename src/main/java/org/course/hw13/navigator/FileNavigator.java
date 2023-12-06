@@ -3,6 +3,7 @@ package org.course.hw13.navigator;
 import org.course.hw13.exceptions.FileAlreadyExist;
 import org.course.hw13.exceptions.InconsistentPathException;
 
+import java.io.File;
 import java.util.*;
 
 public class FileNavigator {
@@ -21,6 +22,28 @@ public class FileNavigator {
         }
 
         filesMap.get(path).add(fileData);
+    }
+
+    public void add(String path) throws FileAlreadyExist, InconsistentPathException {
+//        File file = new File(path).getAbsoluteFile();
+//
+//        if (!file.isFile()) {
+//            throw new IllegalArgumentException("Provided path is not a file.");
+//        }
+//
+//        checkConsistency(new FileData(file.getName(), file.length(), file.getAbsolutePath()), file.getParent());
+//
+//        String directory = file.getParent();
+//        if (!filesMap.containsKey(directory)) {
+//            filesMap.put(directory, new ArrayList<>());
+//        }
+//
+//        FileData fileData = new FileData(file.getName(), file.length(), file.getAbsolutePath());
+//        if (filesMap.get(directory).stream().anyMatch(existingFile -> existingFile.getName().equals(fileData.getName()))) {
+//            throw new FileAlreadyExist("File with the same name already exists in the directory.");
+//        }
+//
+//        filesMap.get(directory).add(fileData);
     }
 
     public List<FileData> find(String path) {
