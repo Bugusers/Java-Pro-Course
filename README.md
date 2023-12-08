@@ -205,4 +205,18 @@ The Box type. You can put fruits in a box. However, you cannot put fruits of the
 - A method for adding fruits (plural) to a box.
 - The getWeight() method. The method calculates the weight of the box based on the weight of one fruit and its quantity.
 - The compare method compares the current box with the one passed as a parameter. Returns true if their weights are equal, otherwise false
-- The merge method performs a transfer from the passed box as a parameter to the current one.  
+- The merge method performs a transfer from the passed box as a parameter to the current one. 
+
+### Homework 17 Stream API
+
+Exclusively using the Stream API
+- Method for getting all products in the form of a list, the category of which is equivalent to "Book" and the price is greater than 250.
+- Method of getting all products as a list, with a category equivalent to "Book" and with the possibility of applying a discount. The final list should contain products with a 10% discount applied.
+- Method of getting the cheapest product from the "Book" category. If no product is found (the situation when there is no product with a category), throw an exception with the message "Product [category: category_name] not found"
+- Method for retrieving the last three added products
+- A method for calculating the total cost of products that meet the following criteria:
+  - the product was added during the current year
+  - the product is of type "Book"
+  - the price of the product does not exceed 75
+
+- Method of grouping objects by product type. Thus, the result of the method will be a "Dictionary" data type that stores a key-value pair: {type: list_of_products}
