@@ -220,3 +220,9 @@ Exclusively using the Stream API
   - the price of the product does not exceed 75
 
 - Method of grouping objects by product type. Thus, the result of the method will be a "Dictionary" data type that stores a key-value pair: {type: list_of_products}
+
+### Homework ДЗ 23. Application design and architecture
+
+- Factory design template for creating different types of furniture.
+- Builder design template for creating a car from many parts.
+- Strategy design template for calculating the area of shapes: Rectangle, Triangle
