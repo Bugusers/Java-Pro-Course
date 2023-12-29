@@ -1,4 +1,4 @@
-package org.course.hw23.factory.furniture.table;
+package org.course.hw23.factory.furniture.tables;
 
 
 import lombok.AllArgsConstructor;

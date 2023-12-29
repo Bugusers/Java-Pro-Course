@@ -1,8 +1,8 @@
-package org.course.hw23.factory.furniture.chair;
+package org.course.hw23.factory.furniture.chairs;
 
 public enum ChairType {
     OFFICE_CHAIR,
     DINING_CHAIR,
-    ROCKING_CHAIR,
-    RECLINER_CHAIR
+    BAR_CHAIR,
+    MODERN_OFFICE_CHAIR
 }

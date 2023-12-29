@@ -1,4 +1,4 @@
-package org.course.hw23.factory.furniture.chair;
+package org.course.hw23.factory.furniture.chairs;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
