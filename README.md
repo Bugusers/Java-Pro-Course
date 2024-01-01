@@ -221,7 +221,16 @@ Exclusively using the Stream API
 
 - Method of grouping objects by product type. Thus, the result of the method will be a "Dictionary" data type that stores a key-value pair: {type: list_of_products}
 
-### Homework ДЗ 23. Application design and architecture
+### Homework 22. Annotations and reflection
+
+The TestRunner class can perform "method tests".
+- Instructions: @Test, @BeforeSuite, @AfterSuite. These instructions are applicable only to methods.
+- The @Test instruction indicates that this method is a "test method".
+- TestRunner has a static start method that takes an object of type Class as a parameter.
+- From the "test class", the method with the @BeforeSuite annotation, if any, is first launched, then the methods with @Test annotations are launched, and after all tests are completed, the method with the @AfterSuite annotation is launched.
+- Each test method has priorities (int numbers from 1 to 10), according to which the order of their execution will be selected, if the priority is the same, then the order does not matter.
+
+### Homework 23. Application design and architecture
 
 - Factory design template for creating different types of furniture.
 - Builder design template for creating a car from many parts.
