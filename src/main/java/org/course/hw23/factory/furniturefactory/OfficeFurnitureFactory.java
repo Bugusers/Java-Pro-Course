@@ -1,6 +1,9 @@
 package org.course.hw23.factory.furniturefactory;
 
-import org.course.hw23.factory.furniture.chairs.*;
+import org.course.hw23.factory.furniture.chairs.Chair;
+import org.course.hw23.factory.furniture.chairs.ChairType;
+import org.course.hw23.factory.furniture.chairs.ModernOfficeChair;
+import org.course.hw23.factory.furniture.chairs.OfficeChair;
 import org.course.hw23.factory.furniture.tables.ConferenceTable;
 import org.course.hw23.factory.furniture.tables.OfficeTable;
 import org.course.hw23.factory.furniture.tables.Table;

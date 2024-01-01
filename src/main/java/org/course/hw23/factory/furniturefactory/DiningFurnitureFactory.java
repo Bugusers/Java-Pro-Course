@@ -1,12 +1,13 @@
 package org.course.hw23.factory.furniturefactory;
 
-import org.course.hw23.factory.furniture.chairs.*;
+import org.course.hw23.factory.furniture.chairs.BarChair;
+import org.course.hw23.factory.furniture.chairs.Chair;
+import org.course.hw23.factory.furniture.chairs.ChairType;
+import org.course.hw23.factory.furniture.chairs.DiningChair;
 import org.course.hw23.factory.furniture.tables.CoffeeTable;
 import org.course.hw23.factory.furniture.tables.DiningTable;
 import org.course.hw23.factory.furniture.tables.Table;
 import org.course.hw23.factory.furniture.tables.TableType;
-
-import javax.print.DocFlavor;
 
 public class DiningFurnitureFactory implements FurnitureFactory {
     @Override
