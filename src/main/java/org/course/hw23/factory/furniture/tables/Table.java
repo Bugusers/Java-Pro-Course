@@ -1,17 +1,17 @@
-package org.course.hw23.factory.furniture;
+package org.course.hw23.factory.furniture.tables;
 
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.course.hw23.factory.furniture.Furniture;
 
 
 @Data
 @AllArgsConstructor
-public class Sofa implements Furniture {
-    private String material;
-    private String color;
-    private int legs;
-
+public abstract class Table implements Furniture {
+    protected String material;
+    protected String color;
+    protected String shape;
     @Override
     public void displayInfo() {
         System.out.println("=================");
@@ -24,6 +24,6 @@ public class Sofa implements Furniture {
     public String toString() {
         return "Material: " + material + '\n' +
                 "Color: " + color + '\n' +
-                "Legs: " + legs;
+                "Shape: " + shape;
     }
 }
