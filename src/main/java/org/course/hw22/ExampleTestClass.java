@@ -10,17 +10,17 @@ public class ExampleTestClass {
         System.out.println("BeforeSuite method");
     }
 
-    @Test(priority = 10)
+    @Test(priority = 3)
     public void testMethod1() {
         System.out.println("TestMethod1");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 6)
     public void testMethod2() {
         System.out.println("TestMethod2");
     }
 
-    @Test(priority = 5)
+    @Test
     public void testMethod3() {
         System.out.println("TestMethod3");
     }
